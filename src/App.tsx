@@ -15,7 +15,7 @@ function App() {
         <div className="flex justify-between w-full">
           <button onClick={() => setColor(true)}>Color</button>
           <button onClick={() => (setColor(false), state.color = "#fff")}>Eraser</button>
-          <input type="range" name="size" id="size" value={snap.size} min="20" max="100" onChange={(e: any) => state.size = e.target.value} />
+          <input type="range" name="size" id="size" value={snap.size} min="5" max="100" onChange={(e: any) => state.size = e.target.value} />
           {/* {state.size} */}
         </div>
 
