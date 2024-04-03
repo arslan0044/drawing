@@ -16,7 +16,6 @@ function Canvas({ width, height }: { width: number; height: number }) {
   function drawLine(start: any, end: any, ctx: any, color: string, width: number) {
     start = start ?? end;
     ctx.beginPath();
-    // ctx.radius=()
     ctx.lineWidth = width;
     ctx.strokeStyle = color;
     ctx.moveTo(start.x, start.y);
